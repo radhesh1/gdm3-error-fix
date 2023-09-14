@@ -1,3 +1,5 @@
+#!/bin/bash
+# Current fix is only for ubuntu but I hope to add in fedora too. 
 echo "Showing available drivers"
 sudo ubuntu-drivers devices
 echo "Downloading the recommended Drivers"
