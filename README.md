@@ -17,7 +17,6 @@ This repository aims to provide you with the tools and knowledge needed to troub
 ## Getting Started
 
 To start fixing GDM3 errors, follow these steps:
-0. Go to GRUB and then Advanced Options > recovery mode > root and then do step 1.
 
 1. **Clone the Repository**: Clone this repository to your local machine using the following command:
    ```bash
@@ -34,29 +33,25 @@ To start fixing GDM3 errors, follow these steps:
 
 Here are some common GDM3 errors you might encounter:
 
-- **Error: XYZ** - A brief description of the error and a link to the detailed guide.
+- **Error: Blinking Cusror** - The most common "Blinking cursor error" is due to desktop manager issue and its annoying to get stuck on it
 
-- **Error: ABC** - A brief description of the error and a link to the detailed guide.
+- **Error: gdm3 not working** - The error could be seeing gdm3.service ok and no response
 
-- ...
 
 Explore the [Common Errors](common-errors.md) documentation for a comprehensive list of known errors and their solutions.
 
 ## Fixing GDM3 Errors
-
-In this section, you will find detailed guides for fixing various GDM3 errors. Each guide includes:
-
-- A brief introduction to the error.
-- Step-by-step instructions.
-- Code snippets and configuration changes.
-- Troubleshooting tips.
-
-Here are some of the guides available:
-
-- [Fixing Error XYZ](fix-xyz.md) - Step-by-step guide to resolve Error XYZ.
-- [Fixing Error ABC](fix-abc.md) - Detailed instructions for fixing Error ABC.
-
-Feel free to open an issue if you encounter an unlisted error or need further assistance.
+1. Go to GRUB and then Advanced Options > recovery mode > root and then do step 1.
+2. Get the Github repo and execute it by
+   ```bash
+   git clone https://github.com/your-username/gdm3-error-fix.git
+   sudo chmod +x fix.sh
+   ./fix.sh
+   ```
+## Future Changes to do
+* Add support for more GNOME distros
+* Putting the code in the codebase of the distros
+* trying to get rid of such issues
 
 ## Contributing
 
@@ -71,6 +66,6 @@ For more details, please refer to our [Contribution Guidelines](CONTRIBUTING.md)
 
 ## License
 
-This repository is licensed under the [MIT License](LICENSE). By contributing to this project, you agree to abide by the terms of this license.
+This repository is licensed under the [GPL v3 License](LICENSE). By contributing to this project, you agree to abide by the terms of this license.
 
 Happy troubleshooting and fixing those GDM3 errors! 🚀
